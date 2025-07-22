@@ -1,28 +1,31 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
-:root{  
+
+:root {
     /* Cores principais */
-    --azul:             #005F99;   /* Azul vibrante, profissional e confiável */
-    --azul-secundario:  #0077B6;    /* Para hover ou botões */
-    --azul-navbar:      #006494;        /* Navbar azul médio */
+    --azul:             #005F99;
+    --azul-secundario:  #0077B6;
+    --azul-navbar:      #006494;
+    --azul-claro:       #0096c7;
 
     /* Fundo e superfícies */
-    --fundo:            #F8F9FA;   /* Quase branco, fundo geral */
+    --fundo:            #F8F9FA;
     --branco:           #FFFFFF;
-    --cinza-claro:      #DEE2E6;   /* Para bordas ou divisores */
+    --cinza-claro:      #DEE2E6;
 
     /* Texto */
-    --texto-principal:  #1B263B;   /* Azul escuro puxando pro cinza, ótima legibilidade */
+    --texto-principal:  #1B263B;
     --texto-suave:      #495057;
 
     /* Cores auxiliares */
-    --sucesso:          #51CF66;   /* Verde suave */
-    --erro:             #FF6B6B;   /* Vermelho leve para alertas */
-    --aviso:            #FFD43B;   /* Amarelo vibrante para avisos */
+    --sucesso:          #51CF66;
+    --erro:             #FF6B6B;
+    --aviso:            #FFD43B;
 }
 
 @font-face {
@@ -30,39 +33,44 @@
     src: url(../font/super_bubble/Super\ Bubble.ttf);
 }
 
-body{
+/* Body */
+body {
     width: 100%;
     height: 100%;
     background-color: var(--fundo);
 }
+
+/* Links */
 a {
     color: var(--branco);
 }
-header{
-    background-color: var(--azul);
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--azul), var(--azul-navbar));
     width: 100%;
     height: 25vh;
 }
 
-#logo{
+/* Logo */
+#logo {
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#logo h1{
+#logo h1 {
     color: var(--branco);
     font-family: logo;
     font-size: 5em;
     letter-spacing: 3px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-
 }
 
+/* Navbar */
 #navbar {
     height: 30%;
-    background-color: var(--azul-navbar);
     display: flex;
     justify-content: right;
     align-items: center;
@@ -70,6 +78,125 @@ header{
     gap: 1em;
 }
 
-#navbar a{
+#navbar a {
     font-size: 1.3rem;
+}
+
+/* Section */
+section {
+    text-align: center;
+    margin: 2em;
+    font-size: 1.2em;
+    color: var(--texto-principal);
+}
+
+/* Main Container */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 2em;
+    padding: 1em;
+    justify-content: center;
+}
+
+/* Card de Bicho */
+main .bichos {
+    background-color: var(--branco);
+    color: var(--texto-principal);
+    border-radius: 12px;
+    height: 26em;
+    width: 18em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+main .bichos:hover {
+    transform: translateY(-5px);
+}
+
+/* Dados do Bicho */
+main .bichos .dadosBicho {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+main .bichos .dadosBicho .informacoesBichos {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+main .bichos .dadosBicho h3 {
+    font-size: 1.3em;
+}
+
+main .bichos .dadosBicho h4 {
+    font-size: 0.9em;
+    color: var(--texto-suave);
+    margin-top: 0.3em;
+}
+
+main .bichos .fotoBicho img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Botão Adotar */
+main .bichos .dadosBicho a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .bichos .dadosBicho a button {
+    background-color: var(--azul-secundario);
+    width: 100%;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    color: var(--branco);
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .bichos .dadosBicho a button:hover {
+    background-color: var(--azul-claro);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    main {
+        margin: 1em;
+    }
+
+    main .bichos {
+        width: 90%;
+        height: auto;
+    }
+}
+@media (max-width: 600px) {
+    #logo h1{
+        font-size: 3em;
+    }
+    #logo {
+        height: 50%;
+    }
+    #navbar {
+        gap: 0.5em;
+        flex-direction: column;
+        justify-content: center;
+        height: 40%;
+    }
 }
