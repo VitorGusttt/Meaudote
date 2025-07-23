@@ -174,8 +174,62 @@ main .bichos .dadosBicho a button {
 main .bichos .dadosBicho a button:hover {
     background-color: var(--azul-claro);
 }
+/*fORMULARIOS*/
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    color: var(--texto-principal);
+    border-radius: 12px;
+    height: 60vh;
+    width: 60%;
+    padding: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
-/* Responsivo */
+main form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);;
+}
+
+main form input {
+    width: 80%;
+    height: 4em;
+    border: 1px solid var(--azul-claro);
+    padding: 1rem;
+    border-radius: 20px;
+    
+}
+
+main form label{
+    margin-top: 1em;
+}
+
+main form button {
+    background-color: var(--azul-secundario);
+    width: 60%;
+    height: 3em;
+    border-radius: 25px;
+    color: var(--branco);
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1em; margin-bottom: 0.5em;
+}
+main form a {
+    color: var(--texto-principal);
+    text-decoration: underline;
+}
+
+main form button:hover {
+    background-color: var(--azul-claro);
+}
+/*Responsivo */
 @media (max-width: 768px) {
     main {
         margin: 1em;
@@ -184,6 +238,14 @@ main .bichos .dadosBicho a button:hover {
     main .bichos {
         width: 90%;
         height: auto;
+    }
+
+    main form{
+        width: 90%;
+    }
+    main form button {
+        width: 80%;
+        height: 2em;
     }
 }
 @media (max-width: 600px) {
