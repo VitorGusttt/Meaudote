@@ -23,27 +23,34 @@
   <main>
     <form action="#" method="post">
       <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" placeholder="Fulano da Silva / ONG da Silva" />
+      <input type="text" id="nome" name="nome" placeholder="dog da Silva" />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="email@exemplo.com" />
+      <label for="raca">Raça</label>
+      <input type="text" id="raca" name="raca" placeholder="Vira latinha"/>
 
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" />
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" name="idade" placeholder="5"/>
+
+      <label for="foto">foto</label>
+      <input type="number" id="foto" name="foto" placeholder="5"/>
+      
+      <label for="desc">Descrição</label>
+      <textarea id="desc" name="desc" placeholder="Caramelo bem alegre e gente boa" rows="4"></textarea>
+      
 
       <div class="selects">
-        <label for="pessoa">
-          <input type="radio" id="pessoa" name="tipo" value="pessoa" />
-          Pessoa
+        <label for="cachorro">
+          <input type="radio" id="cachorro" name="tipo" value="cachorro" />
+          Cachorro
         </label>
-        <label for="organizacao">
-          <input type="radio" id="organizacao" name="tipo" value="organizacao" />
-          Organização
+        <label for="gato">
+          <input type="radio" id="gato" name="tipo" value="gato">
+          Gato
         </label>
       </div>
 
+
       <button type="submit">Cadastrar</button>
-      <a href="formLogin.html">Já possuo uma conta</a>
     </form>
   </main>
 </body>
