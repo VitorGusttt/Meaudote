@@ -1,0 +1,11 @@
+# public/.htaccess
+
+RewriteEngine On
+
+# Ignora arquivos e pastas reais (CSS, JS, imagens etc.)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona tudo para index.php, passando o caminho em ?url=
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+

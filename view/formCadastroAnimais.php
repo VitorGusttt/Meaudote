@@ -14,9 +14,9 @@
       <h1>meaudote</h1>
     </div>
     <nav id="navbar">
-        <a href="index.html" title="Login/Logout"><i class="fa-solid fa-home"></i></a>
-      <a href="formCadastro.html" title="Login/Logout"><i class="fa-solid fa-user"></i></a>
-      <a href="formCadastroAnimais.html" title="Cadastrar"><i class="fa-solid fa-circle-plus"></i></a>
+        <a href="home.php" title="Login/Logout"><i class="fa-solid fa-home"></i></a>
+      <a href="formCadastro.php" title="Login/Logout"><i class="fa-solid fa-user"></i></a>
+      <a href="formCadastroAnimais.php" title="Cadastrar"><i class="fa-solid fa-circle-plus"></i></a>
     </nav>
   </header>
 
