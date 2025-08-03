@@ -1,11 +1,10 @@
-# public/.htaccess
 
-RewriteEngine On
+    RewriteEngine On
+    RewriteBase /meaudote/public/
 
-# Ignora arquivos e pastas reais (CSS, JS, imagens etc.)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+    # Ignora arquivos e pastas reais
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
 
-# Redireciona tudo para index.php, passando o caminho em ?url=
-RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
-
+    # Redireciona tudo para index.php
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

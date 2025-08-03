@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meaudote</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../public/src/style.css" />
   <script src="https://kit.fontawesome.com/92c05a5491.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,9 +14,9 @@
       <h1>meaudote</h1>
     </div>
     <nav id="navbar">
-        <a href="home.php" title="Login/Logout"><i class="fa-solid fa-home"></i></a>
-      <a href="formCadastro.php" title="Login/Logout"><i class="fa-solid fa-user"></i></a>
-      <a href="formCadastroAnimais.php" title="Cadastrar"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="?url=home/index"><i class="fa-solid fa-home" ></i></a>
+            <a href="?url=home/cadastroForm" title="Login/Logout"><i class="fa-solid fa-user"></i></a>
+            <a href="?url=home/cadastroAnimaisForm" title="Cadastrar Animal"><i class="fa-solid fa-circle-plus"></i></a>
     </nav>
   </header>
 
@@ -43,7 +43,7 @@
       </div>
 
       <button type="submit">Cadastrar</button>
-      <a href="formLogin.php">Já possuo uma conta</a>
+      <a href="?url=home/loginForm">Já possuo uma conta</a>
     </form>
   </main>
 </body>
