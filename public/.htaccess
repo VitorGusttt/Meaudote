@@ -1,6 +1,6 @@
 
     RewriteEngine On
-    RewriteBase /meaudote/public/
+    RewriteBase localhost/meaudote/public/
 
     # Ignora arquivos e pastas reais
     RewriteCond %{REQUEST_FILENAME} !-f

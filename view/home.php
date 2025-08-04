@@ -35,7 +35,7 @@
                     <h3>Rex</h3>
                     <h4>SRD - Adulto</h4>
                 </div>
-                <a href="#"><button>Adotar</button></a>
+                <a href="?url=home/perfilAnimais"><button>Adotar</button></a>
             </div>
         </div>
 
@@ -48,7 +48,7 @@
                     <h3>Luna</h3>
                     <h4>Beagle - Filhote</h4>
                 </div>
-                <a href="#"><button>Adotar</button></a>
+                <a href="?url=home/perfilAnimais"><button>Adotar</button></a>
             </div>
         </div>
         <div class="bichos">
@@ -60,7 +60,7 @@
                     <h3>Thor</h3>
                     <h4>Pitbull - Jovem</h4>
                 </div>
-                <a href="#"><button>Adotar</button></a>
+                <a href="?url=home/perfilAnimais"><button>Adotar</button></a>
             </div>
         </div>
     </main>

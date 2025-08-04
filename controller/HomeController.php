@@ -15,5 +15,8 @@ class HomeController{
     public function loginForm() {
         include("../view/formLogin.php");
     }
+    public function perfilAnimais(){
+        include("../view/perfilAnimal.php");
+    }
 }
 ?>

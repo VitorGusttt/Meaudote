@@ -21,7 +21,7 @@
   </header>
 
   <main>
-    <form action="#" method="post">
+    <form action="#" method="post" id="cadastroAnimais">
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" placeholder="dog da Silva" />
 
@@ -31,8 +31,8 @@
       <label for="idade">Idade</label>
       <input type="number" id="idade" name="idade" placeholder="5"/>
 
-      <label for="foto">foto</label>
-      <input type="number" id="foto" name="foto" placeholder="5"/>
+      <label for="foto" class = "fotoForm">foto</label>
+      <input type="file" id="foto" name="foto" display = "none"/>
       
       <label for="desc">Descrição</label>
       <textarea id="desc" name="desc" placeholder="Caramelo bem alegre e gente boa" rows="4"></textarea>

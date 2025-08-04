@@ -138,6 +138,8 @@ main .bichos .fotoBicho img {
     border-radius: 10px;
 }
 
+
+
 /* Botão Adotar */
 main .bichos .dadosBicho a {
     width: 100%;
@@ -178,6 +180,10 @@ main form {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     overflow-y: auto;
+}
+
+#cadastroAnimais {
+    padding-top: 12em;
 }
 main form:hover {
     transform: translateY(-5px);
@@ -261,6 +267,100 @@ main form .selects input[type="radio"] {
     cursor: pointer;
 }
 
+main form input[type="file"] {
+    display: none;
+}
+
+/* Botão estilizado para upload de arquivo */
+main form .fotoForm {
+    margin-top: 0.8em;
+    display: inline-block;
+    padding: 0.7em 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--branco);
+    background-color: var(--azul-secundario);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 70%;
+}
+
+main form .fotoForm:hover {
+    background-color: var(--azul-claro);
+}
+
+/*perfil BIchos*/
+#perfilAnimais{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    min-height: 20em;
+    height: fit-content;
+    background-color: var(--branco);
+    color: var(--texto-principal);
+    border-radius: 12px;
+    padding: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    gap: 1em;
+    margin: 0;
+}
+#perfilAnimais img {
+    border-radius: 15px;
+    width: 30%;
+    height: 16em;
+}
+#perfilAnimais #informacoesAnimaisPerfil{
+    padding: 1em;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--texto-principal);
+    border-radius: 12px;
+    border: solid  rgba(58, 163, 255, 0.3);
+}
+
+#informacoesAnimaisPerfil h1 {
+    font-size: 2em;
+}
+
+#informacoesAnimaisPerfil #descricao {
+    border: 1px solid var(--azul-claro);
+    border-radius: 15px;
+    overflow-y: auto;
+    display: flex;
+    padding: 0.2em;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    min-width: 40%;
+    min-height: 3em;
+}
+
+
+#informacoesAnimaisPerfil button {
+    background-color: var(--azul-secundario);
+    width: 8em;
+    height: 1.2em;
+    border-radius: 25px;
+    color: var(--branco);
+    border: none;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5em 0;
+}
+#informacoesAnimaisPerfil button:hover {
+    background-color: var(--azul-claro);
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     main {
@@ -298,3 +398,6 @@ main form .selects input[type="radio"] {
         height: 40%;
     }
 }
+
+
+
