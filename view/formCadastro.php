@@ -21,7 +21,7 @@
   </header>
 
   <main>
-    <form action="#" method="post">
+    <form action="?url=usuario/criar " method="post">
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" placeholder="Fulano da Silva / ONG da Silva" />
 
